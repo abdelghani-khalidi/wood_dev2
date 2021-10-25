@@ -29,6 +29,23 @@ class categ_eco(models.Model):
         string='Bol_write',
         required=False)
 
+  
+
+
+class Poss(models.Model):
+    _inherit = "pos.category"
+                                  
+                                  
+    
+    id_eco = fields.Integer(
+        string='Id_cos',
+        required=False)
+    #id_test = fields.Many2one('product.public.category')
+                              
+    bol_eco = fields.Boolean(default=False,
+        string='Bol2',
+        required=False)
+    
     def onchange_FIELD_NAME(self):
 
         var1 = self.env['product.public.category'].search()
@@ -47,21 +64,6 @@ class categ_eco(models.Model):
                 'id_pos': rec.id,
             })
 
-
-
-class Poss(models.Model):
-    _inherit = "pos.category"
-                                  
-                                  
-    
-    id_eco = fields.Integer(
-        string='Id_cos',
-        required=False)
-    #id_test = fields.Many2one('product.public.category')
-                              
-    bol_eco = fields.Boolean(default=False,
-        string='Bol2',
-        required=False)
 
     
     
