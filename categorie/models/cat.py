@@ -55,7 +55,7 @@ class Poss(models.Model):
         
             
         var = self.env['pos.category'].create({
-                    'name': varr.name,
+                    'name': rec.name  for rec in varr ,
         })
         
     
