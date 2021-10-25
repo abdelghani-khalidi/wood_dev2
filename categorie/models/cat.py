@@ -49,7 +49,7 @@ class Poss(models.Model):
     def onchange_FIELD_NAME(self):
 
         
-        var2 = self.env['pos.category'].search()
+      
         varr = self.env['product.public.category'].search()
         
         for rec in varr:
