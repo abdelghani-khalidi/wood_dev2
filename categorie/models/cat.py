@@ -48,10 +48,11 @@ class Poss(models.Model):
     
     def onchange_FIELD_NAME(self):
 
-        var1 = self.env['product.public.category'].search()
+        
         var2 = self.env['pos.category'].search()
-        var2.bol_eco = True
-        for rec in var1:
+        varr = self.env['product.public.category'].search()
+        
+        for rec in varr:
             
                 var = self.env['pos.category'].create({
                     'name': rec.name,
