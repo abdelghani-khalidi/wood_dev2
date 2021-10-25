@@ -53,12 +53,14 @@ class Poss(models.Model):
         varr = self.env['product.public.category'].search([])
         print("testttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",varr)
         
+        for rec in varr:
+        
             
-        vr = self.env['pos.category'].sudo().create({
-            'name': y.name,
-            'bol_eco': True,
-            'id_eco': y.id,
-            })
+            vr = self.env['pos.category'].sudo().create({
+                'name': rec.name,
+                'bol_eco': True,
+                'id_eco': rec.id,
+                })
         
     
 
