@@ -64,8 +64,8 @@ class Poss(models.Model):
                 })
         for rv in var2:
              vr = self.env['product.public.category'].sudo().create({
-            'name': rr.name,
-            'id_pos': rr.id,
+            'name': rv.name,
+            'id_pos': rv.id,
             'bol2' : True,
             
                 
