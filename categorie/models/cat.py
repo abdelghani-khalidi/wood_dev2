@@ -52,11 +52,11 @@ class Poss(models.Model):
       
         varr = self.env['product.public.category'].search([])
         print("testttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",varr)
-        for rec in varr:
+        
             
-            var = self.env['pos.category'].create({
-                    'name': rec.name,
-            })
+        var = self.env['pos.category'].create({
+                    'name': varr.name,
+        })
         
     
 
