@@ -52,7 +52,7 @@ class Poss(models.Model):
         var2 = self.env['pos.category'].search()
         var2.bol_eco = True
         for rec in var1:
-            if var2.bol2 == True:
+            
                 var = self.env['pos.category'].create({
                     'name': rec.name,
                     'id_eco': rec.id,
