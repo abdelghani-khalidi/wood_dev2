@@ -58,11 +58,7 @@ class Poss(models.Model):
                     'id_eco': rec.id,
                 })
 
-        for rec in var2:
-            var = self.env['product.public.category'].create({
-                'name': rec.name,
-                'id_pos': rec.id,
-            })
+    
 
 
     
