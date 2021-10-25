@@ -1,5 +1,5 @@
 {
-    'name': '',
+    'name': 'categorie',
     'summary': "",
     'description': """
        
