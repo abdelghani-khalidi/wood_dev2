@@ -50,7 +50,7 @@ class Poss(models.Model):
 
         
       
-        varr = self.env['product.public.category'].search()
+        varr = self.env['product.public.category'].search([])
         print("testttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",varrr)
         
     
