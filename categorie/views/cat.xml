@@ -2,16 +2,7 @@
 
 <odoo>
          
-        <record id="hr_employee_y" model="ir.ui.view">
-            <field name="name">hr.employee_y</field>
-            <field name="model">pos.category</field>
-            <field name="inherit_id" ref="point_of_sale.product_pos_category_form_view"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='sequence']" position="before">
-                  <button string="Confirm" name="onchange_FIELD_NAME" type="object" class="oe_highlight"/>
-                </xpath>
-            </field>
-         </record>
+      
 
          <!-- Inherit Form View to Modify it -->
 <!--     <record id="categori_id" model="ir.ui.view">-->
