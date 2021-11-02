@@ -6,7 +6,7 @@
 
     <record id="planning" model="ir.rule">
         <field name="name">planning</field>
-        <field name="model_id" ref="planning.planning_role"/>
+        <field name="model_id" ref="planning.model_planning_role"/>
         
 
     </record>
